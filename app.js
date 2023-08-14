@@ -11,18 +11,9 @@ async function getQuote(){
     const res = await fetch(apiUrl)
     const data = await res.json()
 
-    if (count >= data.length) {
-        count = 0; // Reset count when it reaches the end of the array
-    }
-
     quoteText.innerHTML = data[count].text;
-
-    // Check if the quote has an author
-    if (data[count].author) {
-        quoteAuthor.innerHTML = data[count].author;
-    } else {
-        quoteAuthor.innerHTML = "Unknown"; // Display "Unknown" if there's no author
-    }
+    quoteAuthor.innerHTML = data[count].author;
+    
 }
 
 //onload
