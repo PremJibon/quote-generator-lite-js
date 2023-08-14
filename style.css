@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Caprasimo&family=Fredoka&family=Kablammo&family=Luckiest+Guy&family=Lumanosimo&family=Noto+Sans+JP&family=Pangolin&family=Roboto:ital@0;1&family=Tektur&family=Vina+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#00adff;
+    color:#000;
+    min-height:100vh;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.container{
+    width:auto;
+    margin:auto 10px;
+    max-width:900px;
+    padding:20px 30px;
+    border-radius:10px;
+    background-color:rgb(211 217 229/ 95%);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+}
+.quote-text{
+    font-size:2.75rem;
+}
+.quote-author{
+    font-size:2.5rem;
+    margin-top: 15px;
+    font-weight:bold;
+    font-style:italic;
+}
+.button-container{
+    margin-top:15px;
+    text-align:right;
+}
+button{
+    cursor:pointer;
+    font-size:1.2rem;
+    height:2.5rem;
+    border: none;
+    border-radius:10px;
+    color:#fff;
+    background-color:#333;
+    outline:none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3em rgba(121,121,121,0.65);
+
+}
+button:hover{
+    filter:brightness(110%);
+}
